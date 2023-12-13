@@ -15,8 +15,9 @@ while True:
     for i in range(len(ring)):
         ring[i] = colour
         ring.write()
-        
         time.sleep(0.1)
         
-        ring.fill((0,0,0))
+    for i in range(len(ring)):
+        ring[i] = (0, 0, 0)
         ring.write()
+        time.sleep(0.1)
